@@ -1,0 +1,20 @@
+{
+  "theme": "~/.config/powerline/ediuser-theme.py",
+  "segments": [
+    "virtual_env",
+    "username",
+    "hostname",
+    "ssh",
+    "git",
+    "cwd",
+    "hg",
+    "jobs",
+    "root"
+  ],
+  "cwd": {
+   "mode": "plain"
+  },
+  "vcs": {
+   "show_symbol": "true"
+  }
+}

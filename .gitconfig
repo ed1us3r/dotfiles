@@ -1,0 +1,13 @@
+[user]
+	name = ed1us3r
+	mail = Ed1us3r@outlook.de
+#	signingkey = <KEY>
+	email = Ed1us3r@outlook.de
+#[commit]
+#	gpgsign = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
