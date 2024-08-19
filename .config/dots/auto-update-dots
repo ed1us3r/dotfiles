@@ -1,0 +1,9 @@
+init-dots () {
+    
+
+}
+
+if [ -f ~/.config/dots/dots.lock ] && [ ~/.config/dots/dots.lock -eq "INIT" ]; then
+    echo "[ DOTS ]: Perform Init. Because ~/.config/dots/dots.lock -eq INIT equals true"
+    init-dots
+fi

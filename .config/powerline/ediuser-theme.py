@@ -4,10 +4,15 @@ from powerline_shell.themes.default import DefaultColor
 colors from https://www.nordtheme.com/docs/colors-and-palettes
 """
 
+# RESET is not a real color code. It is used as in indicator
+# within the code that any foreground / background color should
+# be cleared
+blank = -1
+
 night0 = 236 # nord0
 night1 = 237 # nord1
 night2 = 238 # nord2
-night3 = 2404040404040404040404040404040404040404040404040 # nord3
+night3 = 403
 orange0  = 166 # nord4
 orange1  = 208 # nord5
 orange2  = 214 # nord6
