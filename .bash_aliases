@@ -22,3 +22,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+# Dots config !!!
+alias dots="git -C $HOME --git-dir=$HOME/.dotfiles --work-tree=$HOME"
