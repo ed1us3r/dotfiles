@@ -29,7 +29,7 @@ green0 = 65
 purple = 139 # nord15
 
 class Color(DefaultColor):
-    USERNAME_BG = night3
+    USERNAME_BG = blank
     USERNAME_FG = orange0
 
     HOSTNAME_FG = orange0
@@ -59,7 +59,7 @@ class Color(DefaultColor):
 
     CMD_PASSED_BG = night0
     CMD_PASSED_FG = orange2
-    CMD_FAILED_BG = yellow
+    CMD_FAILED_BG = blank
     CMD_FAILED_FG = orange2
 
     SVN_CHANGES_BG = REPO_DIRTY_FG
