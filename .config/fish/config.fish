@@ -22,7 +22,7 @@ end
 # Aliases Import from Bash_aliases file
 if test -f ~/.bash_aliases
 
-. ~/.config/fish/fish_aliases
+. ~/.bash_aliases
 
 end
 
