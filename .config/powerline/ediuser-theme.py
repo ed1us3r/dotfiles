@@ -41,7 +41,7 @@ class Color(DefaultColor):
     PATH_FG = orange0
     CWD_FG = orange0
     CWD_BG = night3
-    SEPARATOR_FG = night3
+    SEPARATOR_FG = orange0
 
     READONLY_BG = red
     READONLY_FG = orange2
@@ -57,7 +57,7 @@ class Color(DefaultColor):
     JOBS_FG = frost3
     JOBS_BG = night0
 
-    CMD_PASSED_BG = night0
+    CMD_PASSED_BG = blank
     CMD_PASSED_FG = orange2
     CMD_FAILED_BG = blank
     CMD_FAILED_FG = orange2
