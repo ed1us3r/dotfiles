@@ -1,5 +1,4 @@
 # LS and CD
-
 alias ll='ls -la'
 alias la='ls -A'
 alias l='ls -CF'
@@ -14,7 +13,7 @@ alias cls='clear'
 # enable color support of ls and also add handy aliases
 # Uncomment if for better compatability as it prevents from failing alias statements when dircolors are not available
 # fish (/bin/fish) Shell will fail when sourcing those aliases when if statement is active.
-if [ -x /usr/bin/dircolors ]; then
+if test -f /usr/bin/dircolors
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     alias dir='dir --color=auto'
@@ -22,7 +21,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
-fi
+end
 
 # Dots config !!!
 alias dots="git -C $HOME --git-dir=$HOME/.dotfiles --work-tree=$HOME"
