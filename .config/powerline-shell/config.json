@@ -1,5 +1,5 @@
 {
-  "theme": "~/.config/powerline/ediuser-theme.py",
+  "theme": "~/.config/powerline/ediuser-theme-nord.py",
   "segments": [
     "virtual_env",
     "username",
