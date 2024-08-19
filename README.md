@@ -1,6 +1,25 @@
 # dotfiles
 A Space for all of my configs. 
 
+## What do i need?
+
+**BASIC**
+
+- [x] git
+- [x] bash
+
+**EXTENDED**
+
+- [x] powerline
+- [x] fish
+- [x] toolbox
+
+**Optional**
+
+- [x] fortune & cowsay
+- [x] thefuck
+- [x] touchegg
+
 ## Init
 
 Source [gist:ed1us3r/init-dots.sh](https://gist.github.com/ed1us3r/50e031a3bbd799212e749d33c278126a)
