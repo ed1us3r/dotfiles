@@ -17,10 +17,10 @@ nord4 = 405
 nord5 = 406
 nord6 = 407
 
-frost0 = 244
-frost1 = 245
-frost2 = 249 
-frost3 = 239
+frost0 = 505
+frost1 = 506
+frost2 = 507 
+frost3 = 508
  
 red    = 167 
 red0   = 52
