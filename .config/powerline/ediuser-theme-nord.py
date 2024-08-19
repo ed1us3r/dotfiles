@@ -35,11 +35,11 @@ class Color(DefaultColor):
     USERNAME_FG = nord0
 
     HOSTNAME_FG = nord0
-    HOSTNAME_BG = nord1
+    HOSTNAME_BG = blank
 
-    HOME_BG = frost2
+    HOME_BG = blank
     HOME_FG = nord2
-    PATH_BG = nord1
+    PATH_BG = blank
     PATH_FG = nord0
     CWD_FG = nord0
     CWD_BG = nord3
