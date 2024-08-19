@@ -12,8 +12,6 @@ set LC_ALL en_GB.UTF-8
 
 
 # krew
-#
-#
 set -gx PATH $PATH $HOME/.krew/bin
 
 
@@ -22,9 +20,6 @@ function fish_prompt
 end
 
 # Aliases Import from Bash_aliases file
-
-#
-
 if test -f ~/.bash_aliases
 
 . ~/.bash_aliases
@@ -41,7 +36,7 @@ set fish_pager_color_selected_background --background=white
 
 # Cowsay on Startup
 
-fortune | cowsay -f ~/.config/cowsay/custom-cows/panda2.cow
+fortune | cowsay -f ~/.config/cowsay/custom-cows/panda.cow
 
 
 
