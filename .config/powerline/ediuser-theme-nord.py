@@ -9,18 +9,18 @@ colors from https://www.nordtheme.com/docs/colors-and-palettes
 # be cleared
 blank = -1
 
-nord0 = 401
-nord1 = 402
-nord2 = 403
-nord3 = 404
-nord4 = 405
-nord5 = 406
-nord6 = 407
+nord0 = 201
+nord1 = 202
+nord2 = 203
+nord3 = 204
+nord4 = 205
+nord5 = 206
+nord6 = 207
 
-frost0 = 505
-frost1 = 506
-frost2 = 507 
-frost3 = 508
+frost0 = 215
+frost1 = 216
+frost2 = 217 
+frost3 = 218
  
 red    = 167 
 red0   = 52
