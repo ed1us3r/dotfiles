@@ -35,7 +35,7 @@ class Color(DefaultColor):
     USERNAME_FG = nord0
 
     HOSTNAME_FG = nord0
-    HOSTNAME_BG = nord1
+    HOSTNAME_BG = frost0
 
     HOME_BG = frost2
     HOME_FG = nord2
