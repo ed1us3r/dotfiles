@@ -1,8 +1,9 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-export LC_CTYPE=en_GB.UTF-8
-export LC_ALL=en_GB.UTF-8
+# Just in case you have to setup lang support. https://askubuntu.com/questions/114759/warning-setlocale-lc-all-cannot-change-locale
+#export LC_CTYPE=en_GB.UTF-8
+#export LC_ALL=en_GB.UTF-8
 
 # If not running interactively, don't do anything. This prevents unnecessary commands from running in non-interactive environments (like during script execution).
 case $- in
