@@ -3,6 +3,25 @@ A Space for all of my configs.
 
 ## Init
 
+Source [gist:ed1us3r/init-dots.sh](https://gist.github.com/ed1us3r/50e031a3bbd799212e749d33c278126a)
+
+``` bash
+
+(
+  dots() { git -C $HOME --git-dir=$HOME/.dotfiles --work-tree=$HOME $@; };
+  export dots &&
+  cd ~ &&
+  git clone --bare https://github.com/ed1us3r/dotfiles .dotfiles &&
+  dots config --local status.showUntrackedFiles no &&
+  dots reset --hard &&
+  echo "Init Complete" &&
+  bash -i source ~/.bash_profile
+)
+
+```
+
+## Init - Manually
+
 At the core of it all, is an alias in my .zshrc/.bashrc:
 
 ```
