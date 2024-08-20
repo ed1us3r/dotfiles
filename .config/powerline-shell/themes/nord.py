@@ -43,8 +43,8 @@ class Color(DefaultColor):
 
     REPO_CLEAN_BG = green
     REPO_CLEAN_FG = night1
-    REPO_DIRTY_BG = red
-    REPO_DIRTY_FG = snow2
+    REPO_DIRTY_BG = frost0 
+    REPO_DIRTY_FG = red
 
     JOBS_FG = frost3
     JOBS_BG = night0
@@ -65,9 +65,9 @@ class Color(DefaultColor):
     GIT_STAGED_BG = frost0
     GIT_STAGED_FG = night1
     GIT_NOTSTAGED_BG = frost0 
-    GIT_NOTSTAGED_FG = orange 
+    GIT_NOTSTAGED_FG = night0 
     GIT_UNTRACKED_BG = frost0 
-    GIT_UNTRACKED_FG =  purple
+    GIT_UNTRACKED_FG =  night0
     GIT_CONFLICTED_BG = frost0
     GIT_CONFLICTED_FG = red 
 
