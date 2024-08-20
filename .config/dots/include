@@ -1,4 +1,4 @@
 # User specific environment and startup programs
 if [ -f ~/.config/dots/powerline ]; then
-    . ~/.config/powerline
+    . ~/.config/dots/powerline
 fi

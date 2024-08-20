@@ -64,12 +64,12 @@ class Color(DefaultColor):
 
     GIT_STAGED_BG = frost0
     GIT_STAGED_FG = night1
-    GIT_NOTSTAGED_BG = orange
-    GIT_NOTSTAGED_FG = snow2
-    GIT_UNTRACKED_BG = purple
-    GIT_UNTRACKED_FG = snow2
-    GIT_CONFLICTED_BG = red
-    GIT_CONFLICTED_FG = snow2
+    GIT_NOTSTAGED_BG = frost0 
+    GIT_NOTSTAGED_FG = orange 
+    GIT_UNTRACKED_BG = frost0 
+    GIT_UNTRACKED_FG =  purple
+    GIT_CONFLICTED_BG = frost0
+    GIT_CONFLICTED_FG = red 
 
     GIT_STASH_BG = yellow
     GIT_STASH_FG = night1

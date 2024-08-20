@@ -2,20 +2,36 @@
 #
 # POWERLINE
 #
-#function _update_ps1() {
-#    PS1=$(powerline-shell $?)
-#}
 
-#if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-#fi
+Powerline_shell_installed=false
+
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+function _install_ps() {
+    git clone https://github.com/b-ryan/powerline-shell
+    cd powerline-shell
+    python setup.py install
+}
+
+
+if [ -f $(which powerline-shell) ]; then 
+    Powerline_shell_installed=true
+fi
+
+if [ $Powerline_shell_installed ] && [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+
+# From here on its all history!
 #if [ -f `which powerline-daemon` ]; then
 #  powerline-daemon -q
 #  POWERLINE_BASH_CONTINUATION=1
 #  POWERLINE_BASH_SELECT=1
 #  . /usr/share/powerline/bash/powerline.sh
 #fi
-
 #powerline-daemon -q
 #POWERLINE_BASH_CONTINUATION=1
 #POWERLINE_BASH_SELECT=1
