@@ -16,7 +16,7 @@ class Segment(BasicSegment):
             return
         if not env:
             return
-        env_name = "  ToolBox::" + env + " "
+        env_name = "  toolbox::" + env + " "
         bg = self.powerline.theme.TOOLBOX_BG
         fg = self.powerline.theme.TOOLBOX_FG
         self.powerline.append(env_name, fg, bg)
