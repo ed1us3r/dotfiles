@@ -22,7 +22,7 @@ else
     Powerline_shell_installed=false
 fi
 
-if [ $Powerline_shell_installed ] && [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+if [ $Powerline_shell_installed ] && [ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
