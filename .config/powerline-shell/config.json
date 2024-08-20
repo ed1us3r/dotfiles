@@ -17,14 +17,14 @@
   "vcs": {
    "show_symbol": "true"
   },
+  "hostname": {
+   	"function": "powerline.segments.virtual_env",
+	"args": {
+		"variable": "POWERLINE_VIRTUAL_ENV_NAME"
+	},
+	"priority": 50
+  },
 	"common": {
-		{
-			"function": "powerline.segments.common.env.environment",
-			"args": {
-				"variable": "POWERLINE_VIRTUAL_ENV_NAME"
-			},
-			"priority": 50
-		}	
 		"term_truecolor": false,
 		"dividers": {
 			"left": {
