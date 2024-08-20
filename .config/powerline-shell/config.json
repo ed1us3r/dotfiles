@@ -2,8 +2,9 @@
   "theme": "~/.config/powerline-shell/themes/nord.py",
   "segments": [
     "virtual_env",
-    "username",
-    "hostname",
+	"~/.config/powerline-shell/segments/toolbox.py",
+	"username",
+	"~/.config/powerline-shell/segments/hostname.py",
     "ssh",
     "git",
     "cwd",
@@ -16,13 +17,6 @@
   },
   "vcs": {
    "show_symbol": "true"
-  },
-  "hostname": {
-   	"function": "powerline.segments.hostname",
-	"args": {
-		"variable": "POWERLINE_VIRTUAL_ENV_NAME"
-	},
-	"priority": 50
   },
 	"common": {
 		"term_truecolor": false,
