@@ -6,7 +6,7 @@
 Powerline_shell_installed=false
 
 function _update_ps1() {
-    PS1="$(powerline-shell $?) \n \u9654\\$ "
+    PS1="$(powerline-shell $?)$'\n \u2516\u25b6  \\$  '"
 }
 
 function _install_ps() {
