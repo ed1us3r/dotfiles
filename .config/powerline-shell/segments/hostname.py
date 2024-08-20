@@ -18,5 +18,5 @@ class Segment(BasicSegment):
             return
         env_name = env 
         bg = self.powerline.theme.HOSTNAME_BG
-        fg = self.powerline.theme.TOOLBOX_FG
+        fg = self.powerline.theme.HOSTNAME_FG
         self.powerline.append(" " + env_name + " ", fg, bg)
