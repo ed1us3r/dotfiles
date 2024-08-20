@@ -18,7 +18,7 @@
    "show_symbol": "true"
   },
   "hostname": {
-   	"function": "powerline.segments.virtual_env",
+   	"function": "powerline.segments.hostname",
 	"args": {
 		"variable": "POWERLINE_VIRTUAL_ENV_NAME"
 	},
