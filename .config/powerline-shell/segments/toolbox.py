@@ -10,7 +10,7 @@ class Segment(BasicSegment):
             or os.getenv('HOSTNAME')
         if os.getenv('CONTAINER_ENV') or os.getenv('container_env'):
             env = os.getenv('IMAGE_NAME') or os.getenv('image_name')
-        if os.getenv('TOOLBOX_PATH'):
+        if not os.getenv('TOOLBOX_PATH'):
             env = ""
         if socket.gethostname() != 'toolbox':
             env = ""
