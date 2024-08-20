@@ -5,10 +5,10 @@ from powerline_shell.utils import BasicSegment
 
 class Segment(BasicSegment):
     def add_to_powerline(self):
-        env = os.getenv('POWERLINE_VIRTUAL_ENV_NAME') \
-            or os.getenv('CONTAINER-ENV') \
-            or os.getenv('container-env')
-        if os.getenv('POWERLINE_VIRTUAL_ENV_NAME') \
+        env = os.getenv('TOOLBOX_NAME') \
+            or os.getenv('CONTAINER_ENV') \
+            or os.getenv('container_env')
+        if os.getenv('TOOLBOX_NAME') \
             and socket.gethostname() == 'toolbox':
             env = socket.gethostname() 
         if not env:
