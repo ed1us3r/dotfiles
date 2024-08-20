@@ -15,7 +15,7 @@ function _install_ps() {
     python setup.py install
 }
 
-(powerline-shell)
+eval powerline-shell
 Powerline_shell_installed=$?
 
 if [ $Powerline_shell_installed == 0 ]; then
