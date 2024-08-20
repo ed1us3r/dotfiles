@@ -24,7 +24,7 @@
 				"variable": "POWERLINE_VIRTUAL_ENV_NAME"
 			},
 			"priority": 50
-		},	
+		}	
 		"term_truecolor": false,
 		"dividers": {
 			"left": {
