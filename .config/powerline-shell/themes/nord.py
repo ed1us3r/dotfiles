@@ -29,7 +29,7 @@ class Color(DefaultColor):
     HOSTNAME_BG = night0
 
     TOOLBOX_FG = frost0
-    TOOLBOX_BG = night3
+    TOOLBOX_BG = snow2
     HOME_BG = frost2
     HOME_FG = snow2
     PATH_BG = night0

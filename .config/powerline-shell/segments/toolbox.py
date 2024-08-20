@@ -12,9 +12,11 @@ class Segment(BasicSegment):
             env = os.getenv('IMAGE_NAME') or os.getenv('image_name')
         if os.getenv('TOOLBOX_PATH'):
             env = ""
+        if socket.gethostname() != 'toolbox':
+            env = ""
         if not env:
             return
-        env_name = "ToolBox:::" + env
+        env_name = "ToolBox:::" + env + " "
         bg = self.powerline.theme.TOOLBOX_BG
         fg = self.powerline.theme.TOOLBOX_FG
-        self.powerline.append(" " + env_name + " ", fg, bg)
+        self.powerline.append(env_name, fg, bg)
