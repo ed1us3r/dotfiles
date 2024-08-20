@@ -41,7 +41,7 @@ class Color(DefaultColor):
     SSH_BG = orange
     SSH_FG = snow2
 
-    REPO_CLEAN_BG = snow2
+    REPO_CLEAN_BG = frost0 
     REPO_CLEAN_FG = green 
     REPO_DIRTY_BG = snow2 
     REPO_DIRTY_FG = red
@@ -64,11 +64,11 @@ class Color(DefaultColor):
 
     GIT_STAGED_BG = frost0
     GIT_STAGED_FG = night1
-    GIT_NOTSTAGED_BG = frost1 
+    GIT_NOTSTAGED_BG = snow2 
     GIT_NOTSTAGED_FG = night0 
-    GIT_UNTRACKED_BG =  night1 
+    GIT_UNTRACKED_BG =  snow2 
     GIT_UNTRACKED_FG =  red 
-    GIT_CONFLICTED_BG = frost0
+    GIT_CONFLICTED_BG = snow2
     GIT_CONFLICTED_FG = red 
 
     GIT_STASH_BG = yellow
