@@ -22,8 +22,8 @@ green  = 150 # nord14
 purple = 139 # nord15
 
 class Color(DefaultColor):
-    USERNAME_BG = blank 
-    USERNAME_FG = snow0
+    USERNAME_BG = night1 
+    USERNAME_FG = frost0 
 
     HOSTNAME_FG = snow0
     HOSTNAME_BG = night0
@@ -49,10 +49,10 @@ class Color(DefaultColor):
     JOBS_FG = frost3
     JOBS_BG = night0
 
-    CMD_PASSED_BG = blank
-    CMD_PASSED_FG = snow2
-    CMD_FAILED_BG = red 
-    CMD_FAILED_FG = night3   
+    CMD_PASSED_BG = night1 
+    CMD_PASSED_FG = frost0
+    CMD_FAILED_BG = night1 
+    CMD_FAILED_FG = red 
 
     SVN_CHANGES_BG = REPO_DIRTY_FG
     SVN_CHANGES_FG = REPO_DIRTY_BG
