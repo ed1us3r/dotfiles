@@ -1,0 +1,3 @@
+https://github.com/b-ryan/powerline-shell/tree/master/powerline_shell/themes
+
+Moved to .config/powerline-shell/...
