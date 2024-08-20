@@ -115,5 +115,8 @@ fi
 # to display special segment if user is within a container
 source /etc/os-release
 if [ "$VARIANT_ID" = "container" ]; then
-  export POWERLINE_VIRTUAL_ENV_NAME=toolbox
+  export os_variant=container
+  export OS_VARIANT=container
+  export TOOLBOX_NAME="$NAME"+"$VERSION"
+  export toolbox_name="$NAME"+"$VERSION"
 fi
