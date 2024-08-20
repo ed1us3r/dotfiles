@@ -15,11 +15,8 @@ function _install_ps() {
     python setup.py install
 }
 
-if powerline-shell; then 
-    Powerline_shell_installed=true
-else
-    Powerline_shell_installed=false
-fi
+powerline-shell
+Powerline_shell_installed=$?
 
 if [ $Powerline_shell_installed ]; then
     if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
