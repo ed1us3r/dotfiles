@@ -18,7 +18,7 @@ function _install_ps() {
 powerline-shell
 Powerline_shell_installed=$?
 
-if [ $Powerline_shell_installed ]; then
+if [ $Powerline_shell_installed == 1 ]; then
     if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
         PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
     fi
