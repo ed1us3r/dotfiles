@@ -41,9 +41,9 @@ class Color(DefaultColor):
     SSH_BG = orange
     SSH_FG = snow2
 
-    REPO_CLEAN_BG = green
-    REPO_CLEAN_FG = night1
-    REPO_DIRTY_BG = frost0 
+    REPO_CLEAN_BG = snow2
+    REPO_CLEAN_FG = green 
+    REPO_DIRTY_BG = snow2 
     REPO_DIRTY_FG = red
 
     JOBS_FG = frost3
