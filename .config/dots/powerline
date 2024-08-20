@@ -16,7 +16,7 @@ function _install_ps() {
 }
 
 
-if [ -f $(which powerline-shell) ]; then 
+if [ -f `which powerline-shell` ]; then 
     Powerline_shell_installed=true
 fi
 
