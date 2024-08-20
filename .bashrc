@@ -109,3 +109,11 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+# When Launched via toolbox we have to prevent some more abstract logic
+# Therefor load OS information and register variable for powerline
+# to display special segment if user is within a container
+source /etc/os-release
+if [ "$VARIANT_ID" = "container" ]; then
+  export POWERLINE_VIRTUAL_ENV_NAME=toolbox
+fi
