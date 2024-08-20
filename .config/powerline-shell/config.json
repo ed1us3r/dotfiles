@@ -18,11 +18,13 @@
    "show_symbol": "true"
   },
 	"common": {
-		"function": "powerline.segments.common.env.environment",
-		"args": {
-			"variable": "POWERLINE_VIRTUAL_ENV_NAME"
-		},
-		"priority": 50
+		{
+			"function": "powerline.segments.common.env.environment",
+			"args": {
+				"variable": "POWERLINE_VIRTUAL_ENV_NAME"
+			},
+			"priority": 50
+		},	
 		"term_truecolor": false,
 		"dividers": {
 			"left": {
