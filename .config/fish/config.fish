@@ -28,7 +28,7 @@ end
 
 if test -f ~/.config/dircolors/nord_dir_colors
 
-  test -r ~/.config/dircolors/nord_dir_colors && eval $(dircolors ~/.config/dircolors/nord_dir_colors)
+  test -r ~/.config/dircolors/nord_dir_colors && eval (dircolors ~/.config/dircolors/nord_dir_colors)
 
 end
 
