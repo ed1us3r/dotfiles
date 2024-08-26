@@ -110,6 +110,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# if nord dircolor-theme is installed source it instead
+if [ -f ~/.config/dircolors/nord_dir_colors ]; then
+    test -r ~/.config/dircolors/nord_dir_colors && eval $(dircolors ~/.config/dircolors/nord_dir_colors)
+fi
+
+
 # When Launched via toolbox we have to prevent some more abstract logic
 # Therefor load OS information and register variable for powerline
 # to display special segment if user is within a container

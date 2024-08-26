@@ -22,10 +22,15 @@ end
 # Aliases Import from Bash_aliases file
 if test -f ~/.bash_aliases
 
-. ~/.bash_aliases
-
+  . ~/.bash_aliases
+ 
 end
 
+if test -f ~/.config/dircolors/nord_dir_colors
+
+  test -r ~/.config/dircolors/nord_dir_colors && eval $(dircolors ~/.config/dircolors/nord_dir_colors)
+
+end
 
 
 # Pager color adjustment

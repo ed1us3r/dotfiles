@@ -1,0 +1,6 @@
+get_dir_colors() {
+
+touch  ~/.config/dircolors/nord_dir_colors
+curl https://raw.githubusercontent.com/nordtheme/dircolors/develop/src/dir_colors --output ~/.config/dircolors/nord_dir_colors
+
+}
