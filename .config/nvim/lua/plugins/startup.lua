@@ -1,7 +1,5 @@
 return{
-  {
-    url: git@github.com/mong8se/actually.nvim
-  },
+  { url: git@github.com:mong8se/actually.nvim },
   {
     'willothy/veil.nvim',
     lazy = true,
