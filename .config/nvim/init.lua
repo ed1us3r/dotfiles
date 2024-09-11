@@ -1,1 +1,1 @@
-require("lazy").setup("plugins")c
+require("lazy").setup("plugins")
