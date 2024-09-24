@@ -6,7 +6,7 @@ return{
     config = function()
       require "startup".setup()
     end
-  }
+  },
   {
     "nvim-neo-tree/neo-tree.nvim",
       opts = {
