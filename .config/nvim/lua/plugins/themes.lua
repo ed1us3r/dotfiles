@@ -11,7 +11,8 @@ return {
         	bg = true,
         	-- Enable transparent background for floating windows.
         	float = true,
-    },
+    		},
+	})
     end
   }
 
