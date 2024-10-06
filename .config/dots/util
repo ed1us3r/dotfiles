@@ -21,7 +21,7 @@ context() {
 
     # Modify the origin URL to reflect the new repository and username
     # Assumes the repo URL format like 'https://github.com/user/repo.git'
-    NEW_URL=$(echo "$REPO_URL" | sed "s/github.com\/[^/]\+/github.com\/$USERNAME/")
+    NEW_URL=$(echo "$REPO_URL" | sed "s/github.com\/[:]\+/github.com\/$USERNAME/")
 
     # Update the remote origin URL
     echo "Updating remote origin URL to: $NEW_URL"
