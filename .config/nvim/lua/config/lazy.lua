@@ -51,7 +51,6 @@ require("lazy").setup({
     },
   },
 })
-require('nord').set()
 -- https://github.com/shaunsingh/nord.nvim
 require("headlines").setup({
     markdown = {
