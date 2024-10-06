@@ -1,4 +1,4 @@
-!#/bin/env bash
+#!#/bin/env bash
 
 # Function to perform the core operations: update remote URL and switch branch
 context() {
