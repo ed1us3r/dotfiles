@@ -4,6 +4,6 @@ if [ -f ~/.config/dots/powerline ]; then
 fi
 
 # Enable custom scripts
-if [ -f ~/.config/dots/nvim ]; then
-    . ~/.config/dots/nvim
+if [ -f ~/.config/dots/util ]; then
+    . ~/.config/dots/util
 fi
