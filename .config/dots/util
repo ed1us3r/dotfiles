@@ -1,0 +1,63 @@
+!#/bin/env bash
+
+# Function to perform the core operations: update remote URL and switch branch
+context() {
+# Check if the correct number of arguments is given
+  if [ "$#" -ne 2 ]; then
+      echo "Usage: $0 <repository-url> <username>"
+      exit 1
+
+  fi
+
+# Parameters passed to the function
+    REPO_URL=$1
+    USERNAME=$2
+
+    # Ensure the script is being run inside a git repository
+    if [ ! -d ".git" ]; then
+        echo "Error: This is not a git repository!"
+        return 1
+    fi
+
+    # Modify the origin URL to reflect the new repository and username
+    # Assumes the repo URL format like 'https://github.com/user/repo.git'
+    NEW_URL=$(echo "$REPO_URL" | sed "s/github.com\/[^/]\+/github.com\/$USERNAME/")
+
+    # Update the remote origin URL
+    echo "Updating remote origin URL to: $NEW_URL"
+    git remote set-url origin "$NEW_URL"
+
+    # Check if the URL update was successful
+    if [ $? -ne 0 ]; then
+        echo "Error: Failed to update the remote URL."
+        return 1
+    else
+        echo "Remote URL updated successfully to $NEW_URL."
+    fi
+
+    # Fetch from the updated remote to ensure it is accessible
+    echo "Fetching from the new remote URL..."
+    git fetch origin
+    if [ $? -ne 0 ]; then
+        echo "Error: Failed to fetch from the remote repository at $NEW_URL."
+        return 1
+    else
+        echo "Successfully fetched from $NEW_URL."
+    fi
+
+    # Switch the HEAD to the 'main' branch from the new upstream
+    echo "Switching to the 'main' branch on the new remote..."
+    git checkout -B main origin/main
+    if [ $? -ne 0 ]; then
+        echo "Error: Failed to switch to the 'main' branch."
+        return 1
+    else
+        echo "HEAD successfully switched to 'main' branch."
+    fi
+
+    return 0
+}
+
+
+
+
