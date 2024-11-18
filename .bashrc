@@ -125,4 +125,9 @@ if [ "$VARIANT_ID" = "container" ]; then
   export OS_VARIANT=container
   export TOOLBOX_NAME="$NAME"+"$VERSION"
   export toolbox_name="$NAME"+"$VERSION"
+elif [ "$CONTAINER_ENV" = "true" ]; then
+  export os_variant=container
+  export OS_VARIANT=container
+  export TOOLBOX_NAME="$NAME"+"$VERSION"
+  export toolbox_name="$NAME"+"$VERSION"
 fi
