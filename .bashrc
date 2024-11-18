@@ -132,7 +132,7 @@ elif [ "$CONTAINER_ENV" = "true" ]; then
   export toolbox_name="$NAME"+"$VERSION"
 fi
 
-if [ -f ~/bin/kube-ps1.sh ]
+if [ -f ~/bin/kube-ps1.sh ]; then
   source ~/bin/kube-ps1.sh
   PS1='[\u@\h \W $(kube_ps1)]\$ '
 fi 
