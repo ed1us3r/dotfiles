@@ -12,5 +12,9 @@ alias reboot='systemctl reboot'
 alias ..='cd ..'
 alias cls='clear'
 
+alias oc='kubectl'
+
+alias kubectl='kubecolor'
+
 # Dots config !!!
 alias dots="git -C $HOME --git-dir=$HOME/.dotfiles --work-tree=$HOME"
