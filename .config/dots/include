@@ -3,6 +3,11 @@ if [ -f ~/.config/dots/powerline ]; then
     . ~/.config/dots/powerline
 fi
 
+# Include Uility to enter starship mode.
+if [ -f ~/.config/dots/starship ]; then
+    . ~/.config/dots/starship
+fi
+
 # Enable custom scripts
 if [ -f ~/.config/dots/util ]; then
     . ~/.config/dots/util
