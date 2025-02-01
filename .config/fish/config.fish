@@ -15,10 +15,6 @@ set LC_ALL en_GB.UTF-8
 set -gx PATH $PATH $HOME/.krew/bin
 
 
-function fish_prompt
-    powerline-shell --shell bare $status
-end
-
 # Aliases Import from Bash_aliases file
 if test -f ~/.bash_aliases
 

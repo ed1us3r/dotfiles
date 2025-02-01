@@ -21,3 +21,6 @@ fi
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+  # kubectl shell completion
+  source '/home/ediuser/.kube/completion.bash.inc'
+  

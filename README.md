@@ -36,20 +36,19 @@ Source [gist:ed1us3r/init-dots.sh](https://gist.github.com/ed1us3r/50e031a3bbd79
   echo "Init Complete" &&
   bash -i source ~/.bash_profile
 )
-
 ```
 
 ## Init - Manually
 
 At the core of it all, is an alias in my .zshrc/.bashrc:
 
-```
+``` bash
 alias dots="git -C $HOME --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 ```
 
 I have a script that automates install, but it can be manually installed with:
 
-```
+``` bash 
 cd ~
 git clone --bare https://github.com/<my-git-acc>/dotfiles .dotfiles
 dots config --local status.showUntrackedFiles no
