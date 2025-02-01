@@ -136,3 +136,4 @@ if [ -f ~/bin/kube-ps1.sh ]; then
   source ~/bin/kube-ps1.sh
   PS1='[\u@\h \W $(kube_ps1)]\$ '
 fi 
+eval -- "$(/usr/local/bin/starship init bash --print-full-init)"

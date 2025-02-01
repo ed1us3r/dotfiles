@@ -100,3 +100,4 @@ set -gx KUBECONFIG '~/.kube/config'
 # GPG setup
 
 set -gx GPG_TTY (tty)
+source (/usr/local/bin/starship init fish --print-full-init | psub)
